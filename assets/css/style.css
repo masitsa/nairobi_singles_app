@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+html {
+	height:100%;
+	background: no-repeat;
+	background: -webkit-linear-gradient(#e8955a, #f26b5b); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#e8955a, #f26b5b); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#e8955a, #f26b5b); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#e8955a, #f26b5b); /* Standard syntax */
+}
+
+body{background:none;font-family: 'Ubuntu', sans-serif; font-size:2em; color:#ffffff;}
+
+/* General */
+.center-align{margin:0 auto; text-align:center;}
+.margin-top{margin-top: 10px;}
+
+/* Buttons */
+.btn{border:none; border-radius:0px; color:#fff;}
+.btn-primary{background-color:#6476a8;}
+.btn-primary:hover, .btn-primary:active{background: rgba(100, 118, 168, .75); color: #fff;}
+
+/* Forms */
+form button{width: 100%;}
+.form-control{background: none repeat scroll 0 0 #f1a283;border: none; border-radius: 0; box-shadow: none; color: #ffffff; display: inline-block; font-size: 0.7em; margin: 0; outline: medium none; padding: 10px; width: 100%; height:40px;}
+.form-control::-webkit-input-placeholder {color: #ffffff;}
+ /* Firefox 18- */
+.form-control:-moz-placeholder {color: #ffffff;}
+/* Firefox 19+ */
+.form-control::-moz-placeholder {color: #ffffff;}
+.form-control:-ms-input-placeholder {color: #ffffff;}
+.form-control:focus{border-color:#ffffff; box-shadow:none;}
+.input-group-addon{background-color: #f1a283; border:none; border-radius:0; color:#fff;}
+
+/* Heading */
+.page-heading{margin-top:10%; margin-bottom:5%;}
