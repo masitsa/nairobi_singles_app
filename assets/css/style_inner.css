@@ -10,6 +10,9 @@ body{background:none;font-family: 'Ubuntu', sans-serif; font-size:1.5em; color: 
 .center-align{margin:0 auto; text-align:center;}
 .margin-top{margin-top: 10px;}
 ul{list-style:none;}
+.clear-both{clear: both;}
+.pull-left{float:left;}
+.pull-right{float:right;}
 
 /* Buttons */
 .btn{border:none; border-radius:0px; color:#fff;}
@@ -69,5 +72,4 @@ form button{width: 100%;}
 border-color: transparent #F1A283; display: block; display: block; width: 0; z-index: 1; top: 5%;}
 .bubble:after {right: -15px; border-width: 15px 0 15px 15px; border-color:transparent #f5f5f5;}
 .bubble-left:after{left: -15px;border-width: 15px 15px 15px 0;}
-.profile-image-left img{float:left;}
-.profile-image-right img{float:right;}
+.message-date {font-size: 0.8em;width: 100%;}
