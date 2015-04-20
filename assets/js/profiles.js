@@ -17,6 +17,9 @@ function get_all_profiles()
 		{
 			$(".profiles").html(data.result).fadeIn( "slow");
 			$("#profile_username").html(data.username).fadeIn( "slow");
+			var profile_height = parseInt($( window ).height());
+			//set document height
+			$( ".white-content" ).css( "height", profile_height);
 		},
 		error: function(xhr, status, error) 
 		{

@@ -60,22 +60,35 @@
  		
         <div class="white-content">
         	
-            <ul class="profiles">
-                <!--<li>
-                    <div class="avatar">
-                        <img src="../assets/img/avatar.png" class="img-responsive img-circle">
+            <ul class="messages">
+            	<li>
+                	<img src="../assets/img/avatar.png" class="img-responsive pull-left">
+                    
+                    <div class="bubble-left">
+                    	Lorem ipsum
+                        <div class="message-date pull-right">11th Apr 2015 04:58 am</div>
                     </div>
-                    <div class="details">
-                        <div class="profile-name">John Doe</div>
-                        <div class="profile-details">24yr old . Male . Westlands</div>
-                        
-                        <a href="#" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-heart"></i></a>
-                        <a href="#" class="btn btn-lg btn-success"><i class="glyphicon glyphicon-envelope"></i></a>
-                    </div>
-                </li>-->
+                </li>
                 
-                <a class="btn btn-load-more">Load more</a>
+            	<li>
+                    <div class="bubble">
+                    	Lorem ipsum
+                        <div class="message-date pull-left">11th Apr 2015 04:58 am</div>
+                    </div>
+                    
+                	<img src="../assets/img/avatar.png" class="img-responsive pull-right">
+                </li>
             </ul>
+            
+            <form method="POST" action="mobile/messages/message_profile" id="send-message">
+                <div class="form-group">
+                    <input type="text" name="client_email" class="form-control col-md-12" placeholder='Write message'>                          
+                </div>
+                
+                <div class="center-align">
+                    <button type="submit" class="btn btn-lg btn-primary">Send</button>
+                </div>
+            </form>
         </div>
         
 	</body>
