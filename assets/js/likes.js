@@ -2,7 +2,7 @@ var base_url = 'https://www.nairobisingles.com/';
 
 $(document).ready(function(){
       get_all_likes_me();
-      // get_all_i_like();
+      get_all_i_like();
 });
 function get_all_likes_me()
 {
@@ -15,12 +15,12 @@ function get_all_likes_me()
 		dataType: 'json',
 		success:function(data)
 		{
-			$(".likes").html(data.result).fadeIn( "slow");
+			$("#likes ul").html(data.result).fadeIn( "slow");
 			$("#profile_username").html(data.username).fadeIn( "slow");
 		},
 		error: function(xhr, status, error) 
 		{
-			$(".likes").html('<div class="alert alert-danger center-align">'+error+'</div>').fadeIn( "slow");
+			$("#likes ul").html('<div class="alert alert-danger center-align">'+error+'</div>').fadeIn( "slow");
 		}
 	});
 	
@@ -38,12 +38,12 @@ function get_all_i_like()
 		dataType: 'json',
 		success:function(data)
 		{
-			$(".likes").html(data.result).fadeIn( "slow");
+			$("#i_like ul").html(data.result).fadeIn( "slow");
 			$("#profile_username").html(data.username).fadeIn( "slow");
 		},
 		error: function(xhr, status, error) 
 		{
-			$(".likes").html('<div class="alert alert-danger center-align">'+error+'</div>').fadeIn( "slow");
+			$("#i_like ul").html('<div class="alert alert-danger center-align">'+error+'</div>').fadeIn( "slow");
 		}
 	});
 	

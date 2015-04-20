@@ -23,7 +23,7 @@
 		
 		<script src="../assets/js/dsl.js" type="text/javascript" charset="utf-8"></script>
 		
-		<script src="../assets/js/like.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../assets/js/likes.js" type="text/javascript" charset="utf-8"></script>
 		
 	</head>
 	<body>
@@ -58,26 +58,32 @@
             </div>
         </div>
  		
-        <div class="row white-content">
-        	
-            <div class="col-md-12">
-                <ul class="likes">
-                	<!--<li>
-                        <div class="avatar">
-                            <img src="../assets/img/avatar.png" class="img-responsive img-circle">
-                        </div>
-                        <div class="details">
-                        	<div class="profile-name">John Doe</div>
-                            <div class="profile-details">24yr old . Male . Westlands</div>
-                            
-                            <a href="#" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-heart"></i></a>
-                            <a href="#" class="btn btn-lg btn-success"><i class="glyphicon glyphicon-envelope"></i></a>
-                        </div>
-                    </li>-->
-                    
-                    <a class="btn btn-load-more">Load more</a>
+        <div class="white-content">
+        
+        	<div role="tabpanel">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#likes" aria-controls="likes" role="tab" data-toggle="tab">Likes me</a></li>
+                    <li role="presentation"><a href="#i_like" aria-controls="i_like" role="tab" data-toggle="tab">I like</a></li>
                 </ul>
+                
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="likes">
+                        
+                        <ul class="profiles"></ul>
+                        
+                    </div>
+                    
+                    <div role="tabpanel" class="tab-pane fade" id="i_like">
+                        
+                        <ul class="profiles"></ul>
+                        
+                    </div>
+                </div>
             </div>
+
         </div>
         
 	</body>
