@@ -17,6 +17,7 @@ function get_all_profiles()
 		{
 			alert(data.result);
 			$(".profiles").html(data.result).fadeIn( "slow");
+			$("#profile_username").html(data.username).fadeIn( "slow");
 		},
 		error: function(xhr, status, error) 
 		{
