@@ -1,3 +1,5 @@
+var base_url = 'https://www.nairobisingles.com/';
+
 //Send message
 $(document).on("submit","form.send_message2",function(e)
 {
@@ -46,9 +48,11 @@ $(document).ready(function(){
 });
 function get_messages()
 {
+	var web_name = getURLParameter('web_name');
+	
 	$.ajax({
-		type:'POST',
-		url: base_url+"mobile/messages/view_message?callback=?",
+		type:'GET',
+		url: base_url+"mobile/messages/view_message/"+web_name+"?callback=?",
 		cache:false,
 		contentType: false,
 		processData: false,
@@ -66,3 +70,10 @@ function get_messages()
 	
 	return false;
 }
+
+function getURLParameter(name) {
+  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+}
+
+
+

@@ -91,7 +91,4 @@ border-color: transparent #F1A283; display: block; display: block; width: 0; z-i
 a.list-group-item.read { color: #222;background-color: #F3F3F3; }
 hr { margin-top: 5px;margin-bottom: 10px; }
 .nav-pills>li>a {padding: 5px 10px;}
-#inbox .message-image img{}
-#inbox .message-image img{}
-#inbox .name{}
-#inbox .badge{}
+.messages img{width:60px; max-height:60px; overflow: hidden;}
