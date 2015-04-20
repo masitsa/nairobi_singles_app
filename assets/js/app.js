@@ -75,7 +75,7 @@ function get_all_profiles()
 		
 	$.ajax({
 		type:'POST',
-		url: base_url+"mobile/account/get_profiles?callback=?",
+		url: base_url+"mobile/account/get_all_profiles?callback=?",
 		cache:false,
 		contentType: false,
 		processData: false,
