@@ -1,3 +1,5 @@
+var base_url = 'https://www.nairobisingles.com/';
+
 $(document).ready(function(){
       get_inbox();
 });
@@ -12,7 +14,7 @@ function get_inbox()
 		dataType: 'json',
 		success:function(data)
 		{
-			$(".inbox").html(data.result).fadeIn( "slow");
+			$("#inbox").html(data.result).fadeIn( "slow");
 			$("#profile_username").html(data.username).fadeIn( "slow");
 		},
 		error: function(xhr, status, error) 
