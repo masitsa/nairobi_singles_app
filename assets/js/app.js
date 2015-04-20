@@ -66,3 +66,35 @@ $(document).on("submit","form#signin-client",function(e)
 	}
 	return false;
 });
+$(document).ready(function(){
+      get_all_profiles();
+ });
+function get_all_profiles()
+{
+
+		
+		$.ajax({
+			type:'POST',
+			url: base_url+"mobile/account/get_profiles?callback=?",
+			cache:false,
+			contentType: false,
+			processData: false,
+			dataType: 'json',
+			success:function(data)
+			{
+				$(".profiles").html(data.result).fadeIn( "slow");
+			},
+			error: function(xhr, status, error) 
+			{
+				$("#response").html('<div class="alert alert-danger center-align">'+error+'</div>').fadeIn( "slow");
+			}
+		});
+	}
+	
+	else
+	{
+		$("#response").html('<div class="alert alert-danger center-align">'+"No internet connection - please check your internet connection then try again"+'</div>').fadeIn( "slow");
+	}
+	return false;
+
+}
