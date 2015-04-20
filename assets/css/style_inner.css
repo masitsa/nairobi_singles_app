@@ -1,23 +1,21 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 html {
 	height:100%;
-	background:#e8955a no-repeat;
-	background-image: -webkit-linear-gradient(#e8955a, #f26b5b); /* For Safari 5.1 to 6.0 */
-	background-image: -o-linear-gradient(#e8955a, #f26b5b); /* For Opera 11.1 to 12.0 */
-	background-image: -moz-linear-gradient(#e8955a, #f26b5b); /* For Firefox 3.6 to 15 */
-	background-image: linear-gradient(#e8955a, #f26b5b); /* Standard syntax */
+	background:#ffffff no-repeat;
 }
 
-body{background:none;font-family: 'Ubuntu', sans-serif; font-size:1.5em; color:#ffffff;}
+body{background:none;font-family: 'Ubuntu', sans-serif; font-size:1.5em; color: #34495E;}
 
 /* General */
 .center-align{margin:0 auto; text-align:center;}
 .margin-top{margin-top: 10px;}
+ul{list-style:none;}
 
 /* Buttons */
 .btn{border:none; border-radius:0px; color:#fff;}
 .btn-primary{background-color:#6476a8;}
 .btn-primary:hover, .btn-primary:active{background: rgba(100, 118, 168, .75); color: #fff;}
+.btn-load-more{width: 97%; background-color:#e8945a; color:#fff; height: 50px; font-size:1.5em; line-height:40px; margin-top:20px;}
 
 /* Forms */
 form button{width: 100%;}
@@ -40,6 +38,16 @@ form button{width: 100%;}
 .round-container img{height: 100px;}
 
 /* Profiles */
-.navbar{background-color:#e8945a; padding:10px;}
-.profiles .avatar{border: thin solid #e8945a; border-radius:100px; padding:10px;}
-.navbar img{height:50px;}
+.navbar-fixed-top{background-color:#e8945a; padding:10px; color:#fff;}
+.profiles li .avatar{border: thin solid #e8945a; border-radius:100px; padding:10px; float:left; }
+.profiles li .actions{float:right; line-height: 600%;}
+.profiles li .details{margin-left:10%; line-height: 300%;}
+.navbar img{height:33px;}
+.profiles li{border-bottom: thin solid #e8945a; height: 100px; width:97%; margin-top:2%;}
+.profiles li:last-child{border-bottom: none;}
+.white-content{margin:4% 0 6%;}
+.profile-name{font-size: 2em; font-weight:bold; width:100%;}
+
+/* Footer */
+.footer{border-top: thin solid #e8945a; padding:10px; background-color:#f5f5f5;margin-top: 10px;}
+.footer i{font-size: 2em; color:#BDC3C7;}

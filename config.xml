@@ -23,8 +23,31 @@
 
 	<icon src="icon.png" gap:role="default" />
 
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<plugin
+        name="NetworkStatus"
+        value="org.apache.cordova.NetworkManager" />
+
+	<gap:config-file platform="android" parent="/manifest">
+        <uses-permission name="android.permission.ACCESS_NETWORK_STATE" />
+    </gap:config-file>
+
+    <gap:config-file platform="android" parent="/manifest">
+        <uses-permission name="android.permission.INTERNET" />
+    </gap:config-file>
+
+    <gap:config-file platform="android" parent="/manifest">
+        <uses-permission name="android.permission.READ_PHONE_STATE" />
+    </gap:config-file>
+	
+	<gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
+
+	<feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.NetworkManager" />
+        <param name="ios-package" value="CDVConnection" />
+    </feature>	
 
 	<!-- sample preference specification -->
 	<!-- <preference name="autorotate" value="false" readonly="true"/> -->
