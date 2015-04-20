@@ -39,7 +39,7 @@ form button{width: 100%;}
 .round-container img{height: 100px;}
 
 /* Profiles */
-.navbar-top{background-color:#e8945a; padding:10px; color:#fff;}
+.navbar-top{background-color:#e8945a; padding:10px; color:#fff;height: 50px;}
 .profiles{padding-left:10px;}
 .profiles li .avatar{border: thin solid #e8945a; border-radius:100px; padding:10px; float:left; }
 .profiles li .actions{float:right; line-height: 600%;}
