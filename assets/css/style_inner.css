@@ -79,3 +79,15 @@ border-color: transparent #F1A283; display: block; display: block; width: 0; z-i
 .nav-tabs li a{text-align: center;}
 .nav-tabs > li > a{border-bottom: medium solid #F5F5F5; border-radius:0; width:100%;}
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{border:none; border-bottom: medium solid #f1a283; border-radius:0; width:100%;}
+
+/* INBOX */
+.message-inbox .glyphicon:not(.no-margin) { margin-right:10px; }
+.message-inbox .list-group-item:first-child {border-top-right-radius: 0px;border-top-left-radius: 0px;}
+.message-inbox .list-group-item:last-child {border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;}
+.message-inbox .list-group .checkbox { display: inline-block;margin: 0px; }
+.message-inbox .list-group input[type="checkbox"]{ margin-top: 2px; }
+.message-inbox .list-group .glyphicon { margin-right:5px; }
+.message-inbox .list-group .glyphicon:hover { color:#FFBC00; }
+a.list-group-item.read { color: #222;background-color: #F3F3F3; }
+hr { margin-top: 5px;margin-bottom: 10px; }
+.nav-pills>li>a {padding: 5px 10px;}
