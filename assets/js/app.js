@@ -1,5 +1,5 @@
-var base_url = 'https://www.nairobisingles.com/';
-
+//var base_url = 'https://www.nairobisingles.com/';
+var base_url = 'https://localhost/nairobi_singles/';
 /* Function to check for network connectivity */
 
 function is_connected()
@@ -73,28 +73,25 @@ function get_all_profiles()
 {
 
 		
-		$.ajax({
-			type:'POST',
-			url: base_url+"mobile/account/get_profiles?callback=?",
-			cache:false,
-			contentType: false,
-			processData: false,
-			dataType: 'json',
-			success:function(data)
-			{
-				$(".profiles").html(data.result).fadeIn( "slow");
-			},
-			error: function(xhr, status, error) 
-			{
-				$("#response").html('<div class="alert alert-danger center-align">'+error+'</div>').fadeIn( "slow");
-			}
-		});
-	}
+	$.ajax({
+		type:'POST',
+		url: base_url+"mobile/account/get_profiles?callback=?",
+		cache:false,
+		contentType: false,
+		processData: false,
+		dataType: 'json',
+		success:function(data)
+		{
+			alert(data.result);
+			$(".profiles").html(data.result).fadeIn( "slow");
+		},
+		error: function(xhr, status, error) 
+		{
+			$(".profiles").html('<div class="alert alert-danger center-align">'+error+'</div>').fadeIn( "slow");
+		}
+	});
 	
-	else
-	{
-		$("#response").html('<div class="alert alert-danger center-align">'+"No internet connection - please check your internet connection then try again"+'</div>').fadeIn( "slow");
-	}
+	
 	return false;
 
 }
