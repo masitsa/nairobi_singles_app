@@ -15,7 +15,6 @@ function get_all_profiles()
 		dataType: 'json',
 		success:function(data)
 		{
-			alert(data.result);
 			$(".profiles").html(data.result).fadeIn( "slow");
 			$("#profile_username").html(data.username).fadeIn( "slow");
 		},
@@ -24,7 +23,6 @@ function get_all_profiles()
 			$(".profiles").html('<div class="alert alert-danger center-align">'+error+'</div>').fadeIn( "slow");
 		}
 	});
-	
 	
 	return false;
 }
